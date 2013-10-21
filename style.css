@@ -1,0 +1,297 @@
+html {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+body {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background: url("bg.png") repeat-x scroll 0 0%;
+	padding: 0;
+	margin: 0;
+	font: 67px 'LoversQuarrelRegular', Arial, sans-serif;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+#regularPlay {
+	color: #fff;
+	text-shadow: 0 0 5px #fff;
+	text-align: center;
+	width: 620px;
+	height: 0;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+#smallPlay {
+	color: #fff;
+	text-shadow: 0 0 5px #fff;
+	text-align: right;
+	position: absolute;
+	bottom: 40px;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+	opacity: 0;
+}
+
+#mobileInstruction {
+	color: #fff;
+	font-size: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 600px;
+	width: 300px;
+	margin-left: -300px;
+	text-align: right;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+#smallScreenInstruction {
+	color: #fff;
+	font-size: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 400px;
+	width: 300px;
+	margin-left: -300px;
+	text-align: right;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+#arrowsInstruction {
+	font-size: 80px;
+	color: #fff;
+	position: absolute;
+	left: 600px;
+	bottom: -15px;
+	letter-spacing: -5px;
+
+	-webkit-transition: all 1.5s ease-out 0s;
+	-moz-transition: all 1.5s ease-out 0s;
+	-o-transition: all 1.5s ease-out 0s;
+	-ms-transition: all 1.5s ease-out 0s;
+	transition: all 1.5s ease-out 0s;
+}
+
+#tromboneBox {
+	margin: -43px 0 0;
+	position: absolute;
+	top: 50%;
+	left: -635px;
+
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-o-transition: 2s;
+	-ms-transition: 2s;
+	transition: 2s;
+}
+
+#trombone {
+	height: 87px;
+	width: 1024px;
+	position: relative;
+	z-index: 1;
+}
+
+#bell {
+	background: url(trombone1.png);
+	display: block;
+	height: 87px;
+	left: 0;
+	position: absolute;
+	width: 620px;
+}
+
+#slide {
+	background: url(trombone2.png);
+	display: block;
+	height: 87px;
+	left: 0;
+	margin-left: 210px;
+	position: absolute;
+	width: 425px;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+#notes {
+	position: absolute;
+	top: 0;
+	left: 635px;
+	width: 420px;
+	height: 100%;
+
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-o-transition: 2s;
+	-ms-transition: 2s;
+	transition: 2s;
+}
+
+#notes > span {
+	border-radius: 5px;
+	display: block;
+	font-size: 40px;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	width: 47px;
+	float: left;
+	margin: 5px 3px 0 0;
+	position: relative;
+	left: 0;
+	top: 0;
+	outline: none;
+	font-family: Arial;
+
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+#notesParticles {
+	font-size: 50px;
+	text-shadow: 0 0 10px #FFFFFF;
+}
+
+@media (max-width: 600px) and (min-width: 401px) {
+	#smallPlay {
+	opacity: 1;
+}
+
+#regularPlay {
+	opacity: 0;
+}
+
+#notes {
+	left: 5px;
+
+	-webkit-transform: translate(0) rotate(0deg);
+	-moz-transform: translate(0) rotate(0deg);
+	-o-transform: translate(0) rotate(0deg);
+	-ms-transform: translate(0) rotate(0deg);
+	transform: translate(0) rotate(0deg); /* firefox workaround */
+}
+
+#tromboneBox {
+	left: -250px; /* firefox problem */
+
+-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	transform: scale(0.5);
+	top: 150px;
+}
+
+#mobileInstruction {
+	opacity: 0;
+}
+
+#arrowsInstruction {
+	left: 400px;
+}
+
+}
+
+@media (max-width: 400px) {
+	#smallPlay {
+	opacity: 1;
+	bottom: 0;
+}
+
+#regularPlay {
+	opacity: 0;
+}
+
+#notes {
+	left: 0;
+
+	-webkit-transform: translate(0px, 400px) rotate(-90deg);
+	-moz-transform: translate(0px, 400px) rotate(-90deg);
+	-o-transform: translate(0px, 400px) rotate(-90deg);
+	-ms-transform: translate(0px, 400px) rotate(-90deg);
+	transform: translate(0px, 400px) rotate(-90deg);
+
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+#notes > span {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#tromboneBox {
+	left: -370px;
+
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	transform: scale(0.5);
+	top: 150px;
+}
+
+#smallScreenInstruction {
+	opacity: 0;
+}
+
+#arrowsInstruction {
+	left: -80px;
+	opacity: 0;
+}
+
+}
+
+@font-face {
+	font-family: 'LoversQuarrelRegular';
+	src: url('ft/LoversQuarrel-Regular-webfont.eot');
+	src: url('ft/LoversQuarrel-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('ft/LoversQuarrel-Regular-webfont.woff') format('woff'), url('ft/LoversQuarrel-Regular-webfont.ttf') format('truetype'), url('ft/LoversQuarrel-Regular-webfont.svg#LoversQuarrelRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
